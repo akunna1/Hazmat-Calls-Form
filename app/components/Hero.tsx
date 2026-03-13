@@ -36,8 +36,9 @@ export default function Hero() {
 
     {/* Header */}
       <div className="text-center mb-4 font-semibold">
-        <p className="mb-1 md:mt-1 text-xl md:text-2xl">Hazmat Calls & Commercial Trucking Incidents</p>
-        <p className="mb-0">1 Form per Party</p>
+        <p className="mb-1 md:mt-1 text-[#00457E] text-lg sm:text-xl md:text-3xl font-semibold [text-shadow:1px_1px_0_black,-1px_1px_0_black,1px_-1px_0_black,-1px_-1px_0_black]">
+            Hazmat Calls & Commercial Trucking Incidents
+        </p>
       </div>
 
       {/* Form */}
@@ -117,7 +118,7 @@ export default function Hero() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-2">
               <input type="text" name="make" placeholder="Make" required className="border rounded px-3 py-1 w-full" />
               <input type="text" name="model" placeholder="Model" required className="border rounded px-3 py-1 w-full" />
-              <input type="number" name="year" maxLength={4} placeholder="Year" required className="border rounded px-3 py-1 w-full" />
+              <input type="text" name="year" maxLength={4} placeholder="Year" required className="border rounded px-3 py-1 w-full" />
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-2">
@@ -130,18 +131,15 @@ export default function Hero() {
               <input type="text" name="vehicleInsurancePolicyNumber" placeholder="Vehicle Insurance Policy Number" required className="border rounded px-3 py-1 w-full" />
             </div>
 
-            <div className="mb-2">
-            <p className="text-left">Other Vehicle Details (If tractor-trailer, include Trailer information here, Tractor info above):</p>
             <div className="grid grid-cols-1 mb-2">
               <textarea
-                name="summary"
+                name="otherVehicleDetails"
+                placeholder="Other Vehicle Details (If tractor-trailer, include Trailer information here, Tractor info above)"
                 rows={4}
                 className="border rounded px-3 py-1 w-full"
                 required
               />
             </div>
-
-          </div>
 
         </div>
 
@@ -151,23 +149,17 @@ export default function Hero() {
         {/* Final Section */}
         <div className="mt-6 lg:mt-10 mb-4 p-3 shadow-md rounded-md bg-gray-50">
 
-          <div className="mb-5">
-            <p className="text-left font-medium">Copy of incident narrative or incident summary, if applicable: </p>
-            <div className="grid grid-cols-1 mb-2">
-              <textarea
-                name="copy"
-                rows={6}
-                className="border rounded px-3 py-1 w-full"
-              />
+            <p className="text-left font-medium">Other Information:</p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-2">
+              <input type="text" name="ncshpNumber" placeholder="NCSHP Report Number" required className="border rounded px-3 py-1 w-full" />
+              <input type="text" name="ncshpName" placeholder="NCSHP Trooper Name" required className="border rounded px-3 py-1 w-full" />
+              <input type="text" name="ncshpNumber" placeholder="NCSHP Unit Number" required className="border rounded px-3 py-1 w-full" />
             </div>
-          </div>
 
-            <p className="text-left font-medium">Referral emailed to:</p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-2">
-              <input type="email" name="battalionChief" placeholder="Respective Battalion Chief" required className="border rounded px-3 py-1 w-full" />
-              <input type="email" name="deputyFireMarshal" placeholder="Deputy Fire Marshal" required className="border rounded px-3 py-1 w-full" />
-              <input type="email" name="assistantFireMarshal" placeholder="Asst. Chief/Fire Marshal" required className="border rounded px-3 py-1 w-full" />
-              <input type="email" name="assistantChiefOfOperations" placeholder="Asst. Chief of Operations" required className="border rounded px-3 py-1 w-full" />
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-2">
+              <input type="text" name="dpdNumber" placeholder="DPD/DSO Report Number" required className="border rounded px-3 py-1 w-full" />
+              <input type="text" name="dpdName" placeholder="DPD/DSO Trooper Name" required className="border rounded px-3 py-1 w-full" />
+              <input type="text" name="dpdNumber" placeholder="DPD/DSO Unit Number" required className="border rounded px-3 py-1 w-full" />
             </div>
 
         </div>
