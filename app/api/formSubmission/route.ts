@@ -82,11 +82,11 @@ export async function POST(req: Request) {
     }
 
     // Form Title
-    page.drawText('Hazmat Calls and Commercial Trucking Incidents', {
+    page.drawText('HAZMAT CALLS AND COMMERCIAL TRUCKING INCIDENTS', {
       x: leftMargin,
       y,
       size: 16,
-      font: boldFont,
+      font,
       color: rgb(0, 0, 0)
     })
     y -= 30
