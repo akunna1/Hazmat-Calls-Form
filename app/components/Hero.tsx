@@ -160,9 +160,9 @@ export default function Hero() {
         <div className="text-center mb-4">
           <button
             type="submit"
-            className="px-4 py-1 rounded border border-gray-500 bg-gray-500 text-white hover:bg-gray-700 hover:border-gray-700 transition hover:scale-110 active:scale-110"
+            className="px-4 py-1 rounded-full shadow-sm border border-black bg-gray-500 text-white hover:bg-gray-700 hover:border-gray-700 transition hover:scale-110 active:scale-110"
           >
-            Submit
+            <strong>Submit</strong>
           </button>
         </div>
 
