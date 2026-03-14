@@ -2,7 +2,7 @@
 
 export default function Header() {
   return (
-    <header className="flex items-center gap-4 mb-4 ml-3">
+    <header className="flex items-center gap-4 mb-2 ml-3">
       
       {/* Logo */}
       <img
