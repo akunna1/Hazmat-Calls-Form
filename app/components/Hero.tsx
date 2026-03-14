@@ -46,8 +46,8 @@ export default function Hero() {
         <div className="mb-5">
           <p className="text-left font-medium">Incident Date, time & Number:</p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-2">
-              <input type="date" name="incidentDate" placeholder="Incident Date"required className="border rounded px-3 py-1 w-full" />
-              <input type="time" name="incidentTime" placeholder="Incident Time" required className="border rounded px-3 py-1 w-full" />
+              <input type="date" name="incidentDate" placeholder="Incident Date"required className="border rounded px-3 py-1 w-full min-w-0" />
+              <input type="time" name="incidentTime" placeholder="Incident Time" required className="border rounded px-3 py-1 w-full min-w-0" />
               <input type="text" name="incidentNumber" placeholder="Incident Number" required className="border rounded px-3 py-1 w-full" />
             </div>
         </div>
