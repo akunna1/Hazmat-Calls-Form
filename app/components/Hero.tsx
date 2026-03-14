@@ -34,18 +34,11 @@ export default function Hero() {
   return (
     <section className="w-full">
 
-    {/* Header */}
-      <div className="text-center mb-4 font-semibold">
-        <p className="mb-1 md:mt-1 text-[#00457E] text-lg sm:text-xl md:text-3xl font-semibold [text-shadow:1px_1px_0_black,-1px_1px_0_black,1px_-1px_0_black,-1px_-1px_0_black]">
-            Hazmat Calls & Commercial Trucking Incidents
-        </p>
-      </div>
-
       {/* Form */}
       <form
         name="myForm"
         onSubmit={handleSubmit}
-        className="p-4 mb-8 shadow-md rounded-md bg-white"
+        className="p-4 mb-8 shadow-md rounded-md bg-gray-50"
       >
         {/* Incident Section */}
         <div className="mb-4 p-3 shadow-md rounded-md bg-gray-50">
@@ -100,9 +93,9 @@ export default function Hero() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 mb-2">
               <input type="text" name="insuranceName" placeholder="Insurance Name" required className="border rounded px-3 py-1 w-full" />
-              <input type="text" name="insurancePolicyNumber" placeholder="Insurance Policy Number" className="border rounded px-3 py-1 w-full" />
-              <input type="url" name="website" placeholder="Website" className="border rounded px-3 py-1 w-full" />
-              <input type="text" name="usdotSafer" placeholder="USDOT/SAFER Number" className="border rounded px-3 py-1 w-full" />
+              <input type="text" name="insurancePolicyNumber" placeholder="Insurance Policy Number" required className="border rounded px-3 py-1 w-full" />
+              <input type="url" name="website" placeholder="Website" required className="border rounded px-3 py-1 w-full" />
+              <input type="text" name="usdotSafer" placeholder="USDOT/SAFER Number" required className="border rounded px-3 py-1 w-full" />
             </div>
 
         </div>
@@ -137,7 +130,6 @@ export default function Hero() {
                 placeholder="Other Vehicle Details (If tractor-trailer, include Trailer information here, Tractor info above)"
                 rows={4}
                 className="border rounded px-3 py-1 w-full"
-                required
               />
             </div>
 
@@ -146,7 +138,7 @@ export default function Hero() {
         </div>
 
 
-        {/* Final Section */}
+        {/* Other Information Section */}
         <div className="mt-6 lg:mt-10 mb-4 p-3 shadow-md rounded-md bg-gray-50">
 
             <p className="text-left font-medium">Other Information:</p>
@@ -168,7 +160,7 @@ export default function Hero() {
         <div className="text-center mb-4">
           <button
             type="submit"
-            className="px-4 py-1 rounded border border-[#0c2d50] bg-[#0c2d50] text-white hover:bg-[#091f3a] hover:border-[#091f3a] transition hover:scale-110 active:scale-110"
+            className="px-4 py-1 rounded border border-gray-500 bg-gray-500 text-white hover:bg-gray-700 hover:border-gray-700 transition hover:scale-110 active:scale-110"
           >
             Submit
           </button>
