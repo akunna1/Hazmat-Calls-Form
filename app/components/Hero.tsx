@@ -145,13 +145,13 @@ export default function Hero() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-2">
               <input type="text" name="ncshpNumber" placeholder="NCSHP Report Number" required className="border rounded px-3 py-1 w-full" />
               <input type="text" name="ncshpName" placeholder="NCSHP Trooper Name" required className="border rounded px-3 py-1 w-full" />
-              <input type="text" name="ncshpNumber" placeholder="NCSHP Unit Number" required className="border rounded px-3 py-1 w-full" />
+              <input type="text" name="ncshpUnitNumber" placeholder="NCSHP Unit Number" required className="border rounded px-3 py-1 w-full" />
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-2">
               <input type="text" name="dpdNumber" placeholder="DPD/DSO Report Number" required className="border rounded px-3 py-1 w-full" />
               <input type="text" name="dpdName" placeholder="DPD/DSO Trooper Name" required className="border rounded px-3 py-1 w-full" />
-              <input type="text" name="dpdNumber" placeholder="DPD/DSO Unit Number" required className="border rounded px-3 py-1 w-full" />
+              <input type="text" name="dpdUnitNumber" placeholder="DPD/DSO Unit Number" required className="border rounded px-3 py-1 w-full" />
             </div>
 
         </div>
