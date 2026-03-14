@@ -10,7 +10,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Fire Prevention Referral Form",
+  title: "Hazmat Calls and Commercial Trucking Incidents Form",
   description: "For City of Durham Fire Department",
 };
 
