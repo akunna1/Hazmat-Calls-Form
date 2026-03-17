@@ -92,10 +92,14 @@ export async function POST(req: Request) {
     y -= 30
 
     // Incident Date, Time & Number Section
-    drawSubtitle('Incident Date, Time & Number:')
-    drawLine('Incident Date', data.incidentDate)
-    drawLine('Incident Time', data.incidentTime)
+    drawSubtitle('Incident Information:')
+    drawLine('Date', data.incidentDate)
+    drawLine('Time', data.incidentTime)
     drawLine('Incident Number', data.incidentNumber)
+    drawLine("Street", data.incidentStreet)
+    drawLine("City", data.incidentCity)
+    drawLine("State", data.incidentState)
+    drawLine("Zip", data.incidentZip)
 
     y -= 20
 
@@ -156,7 +160,7 @@ export async function POST(req: Request) {
     // Creating a file name
     const safeName = (data.name || 'Unknown').replace(/\s+/g, '-')
     const safeDate = (data.incidentDate || '').replace(/\//g, '-')
-    const fileName = `hazmat-trucking-${safeName}-${safeDate}-${Date.now()}.pdf`
+    const fileName = `hazmat-calls-${safeName}-${safeDate}-${Date.now()}.pdf`
 
     // Uploading to Supabase Storage
     const { error } = await supabaseServer.storage
