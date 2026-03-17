@@ -191,7 +191,7 @@ export async function POST(req: Request) {
           to: "durhamfd.nc@gmail.com",
           subject: "Durham Fire Forms",
           html: `
-            <h2>New Hazmat Calls and Commercial Trucking Incidents Form Submission</h2>
+            <h2>New HazMat Calls and Commercial Trucking Incidents Form Submission</h2>
             <p><strong>Submitted By:</strong> ${data.name}</p>
             <p><strong>Incident Number:</strong> ${data.incidentNumber}</p>
             <p><strong>Submitted On:</strong> ${new Date().toLocaleString()}</p>
