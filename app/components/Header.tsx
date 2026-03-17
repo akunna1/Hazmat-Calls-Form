@@ -13,7 +13,7 @@ export default function Header() {
 
       {/* Title */}
       <div className="leading-tight">
-        <h5 className="text-red-700 text-lg sm:text-xl md:text-3xl font-serif italic">
+        <h5 className="text-red-700 text-lg md:text-2xl lg:text-3xl font-serif italic">
           <div>Hazmat Calls and</div>
           <div>Commercial Trucking Incidents</div>
         </h5>

@@ -10,7 +10,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Hazmat Calls and Commercial Trucking Incidents Form",
+  title: "Hazmat Underground Boring Incident Form",
   description: "For City of Durham Fire Department",
 };
 

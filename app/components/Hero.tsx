@@ -41,20 +41,26 @@ export default function Hero() {
         className="p-4 mb-8 shadow-md rounded-md bg-gray-50"
       >
         {/* Incident Section */}
-        <div className="mb-4 p-3 shadow-md rounded-md bg-gray-50">
-          
-        <div className="mb-5">
-          <p className="text-left font-medium">Incident Date, time & Number:</p>
+        <div className="mt-2 mb-4 p-3 shadow-md rounded-md bg-gray-50">
+          <p className="text-left font-medium">Incident Information:</p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-2">
                 <div className="flex"><input type="date" name="incidentDate" placeholder="Incident Date"required className="border rounded px-3 py-1 w-full" /></div>
                 <div className="flex"><input type="time" name="incidentTime" placeholder="Incident Time" required className="border rounded px-3 py-1 w-full" /></div>
                 <input type="text" name="incidentNumber" placeholder="Incident Number" required className="border rounded px-3 py-1 w-full" />
             </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 mb-2">
+              <input type="text" name="incidentStreet" placeholder="Street Address" required className="border rounded px-3 py-1 w-full" />
+              <input type="text" name="incidentCity" placeholder="City" required className="border rounded px-3 py-1 w-full" />
+              <input type="text" name="incidentState" maxLength={2} placeholder="State" required className="border rounded px-3 py-1 w-full" />
+              <input type="text" name="incidentZip" placeholder="Zip Code" required className="border rounded px-3 py-1 w-full" />            
+            </div>
         </div>
 
-        <div>
-          <p className="text-left font-medium">Party Information:</p>
-            
+
+        {/* Party Information Section */}
+        <div className="mt-6 lg:mt-10 mb-4 p-3 shadow-md rounded-md bg-gray-50">
+          <p className="text-left font-medium">Party Information:</p>    
             <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-2">
               <input type="text" name="name" placeholder="Name" required className="border rounded px-3 py-1 w-full" />
               <input type="tel" name="phone" placeholder="Phone Number" required className="border rounded px-3 py-1 w-full" />
@@ -67,17 +73,12 @@ export default function Hero() {
               <input type="text" name="state" maxLength={2} placeholder="State" required className="border rounded px-3 py-1 w-full" />
               <input type="text" name="zip" placeholder="Zip Code" required className="border rounded px-3 py-1 w-full" />            
             </div>
-
-        </div>
-
         </div>
 
         {/* Contact Infromation Section */}
         <div className="mt-6 lg:mt-10 mb-4 p-3 shadow-md rounded-md bg-gray-50">
-
         <div>
-          <p className="text-left font-medium">Company Information:</p>
-            
+          <p className="text-left font-medium">Company Information:</p>           
             <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-2">
               <input type="text" name="name2" placeholder="Name" required className="border rounded px-3 py-1 w-full" />
               <input type="tel" name="phone2" placeholder="Phone Number" required className="border rounded px-3 py-1 w-full" />
@@ -97,17 +98,13 @@ export default function Hero() {
               <input type="url" name="website" placeholder="Website" required className="border rounded px-3 py-1 w-full" />
               <input type="text" name="usdotSafer" placeholder="USDOT/SAFER Number" required className="border rounded px-3 py-1 w-full" />
             </div>
-
         </div>
 
         </div>
 
         {/* Vehicle Infromation Section */}
         <div className="mt-6 lg:mt-10 mb-4 p-3 shadow-md rounded-md bg-gray-50">
-
-        <div>
-          <p className="text-left font-medium">Vehicle Information:</p>
-            
+          <p className="text-left font-medium">Vehicle Information:</p>      
             <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-2">
               <input type="text" name="make" placeholder="Make" required className="border rounded px-3 py-1 w-full" />
               <input type="text" name="model" placeholder="Model" required className="border rounded px-3 py-1 w-full" />
@@ -125,22 +122,13 @@ export default function Hero() {
             </div>
 
             <div className="grid grid-cols-1 mb-2">
-              <textarea
-                name="otherVehicleDetails"
-                placeholder="Other Vehicle Details (If tractor-trailer, include Trailer information here, Tractor info above)"
-                rows={4}
-                className="border rounded px-3 py-1 w-full"
-              />
+              <textarea name="otherVehicleDetails" placeholder="Other Vehicle Details (If tractor-trailer, include Trailer information here, Tractor info above)" rows={4} className="border rounded px-3 py-1 w-full"/>
             </div>
-
-        </div>
-
         </div>
 
 
         {/* Other Information Section */}
         <div className="mt-6 lg:mt-10 mb-4 p-3 shadow-md rounded-md bg-gray-50">
-
             <p className="text-left font-medium">Other Information:</p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-2">
               <input type="text" name="ncshpNumber" placeholder="NCSHP Report Number" required className="border rounded px-3 py-1 w-full" />
@@ -153,7 +141,6 @@ export default function Hero() {
               <input type="text" name="dpdName" placeholder="DPD/DSO Trooper Name" required className="border rounded px-3 py-1 w-full" />
               <input type="text" name="dpdUnitNumber" placeholder="DPD/DSO Unit Number" required className="border rounded px-3 py-1 w-full" />
             </div>
-
         </div>
 
         {/* Submit */}
