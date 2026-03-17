@@ -27,7 +27,7 @@ export default function Hero() {
       }
     } catch (err) {
       console.error(err);
-      alert("Submission Error. 😕");
+      alert("Network Error! 😵");
     }
   };
 
