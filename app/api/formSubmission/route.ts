@@ -178,6 +178,18 @@ export async function POST(req: Request) {
 
     const publicUrl = publicUrlData.publicUrl
 
+    // Formatting submission datetime in Eastern Time
+    const submittedOn = new Date().toLocaleString("en-US", {
+      timeZone: "America/New_York",
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+      hour: "numeric",
+      minute: "2-digit",
+      hour12: true,
+      timeZoneName: "short"
+    })
+
     // Sending email notification
     const emailRes = await fetch(
       "https://zllpgqwytjlstygdnjvd.supabase.co/functions/v1/send-email",
@@ -194,7 +206,7 @@ export async function POST(req: Request) {
             <h2>New HazMat Calls and Commercial Trucking Incidents Form Submission</h2>
             <p><strong>Submitted By:</strong> ${data.name}</p>
             <p><strong>Incident Number:</strong> ${data.incidentNumber}</p>
-            <p><strong>Submitted On:</strong> ${new Date().toLocaleString()}</p>
+            <p><strong>Submitted On:</strong> ${submittedOn}</p>
             <p>The full record can be accessed through the link below.</p>
             <p><a href="${publicUrl}">View PDF</a></p>
           `,
