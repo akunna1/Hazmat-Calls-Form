@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={poppins.className}>
-      <body className="antialiased">
+      <body className="antialiased" suppressHydrationWarning={true}>
         {/* Universal padding wrapper */}
         <div className="p-4 md:p-6">
           <ClientLayout>
