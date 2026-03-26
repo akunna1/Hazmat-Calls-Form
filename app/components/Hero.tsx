@@ -1,17 +1,24 @@
 "use client";
 
+import React, { useState} from "react";
+
 export default function Hero() {
+  const [loading, setLoading] = useState(false);
 
   // Form submission handler
   const handleSubmit = async (e: React.SubmitEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const form = e.currentTarget;
-  
-  // Converting all form inputs into a plain object for submission
-  const formData: any = Object.fromEntries(
-    new FormData(e.currentTarget)
-  );
 
+    if (loading) return; // prevents spam clicking
+
+    const form = e.currentTarget;
+
+    setLoading(true); // start loading
+  
+    //Turning the form fields into a simple object and telling TS that all keys and values are strings
+    const formData = Object.fromEntries(new FormData(form)) as Record<string, string>;
+
+    // Sending data to API route
     try {
       const res = await fetch("/api/formSubmission", {
         method: "POST",
@@ -29,17 +36,16 @@ export default function Hero() {
       console.error(err);
       alert("Network Error! 😵");
     }
+    finally {
+      setLoading(false); // always stop loading
+    }
   };
 
   return (
     <section className="w-full">
 
       {/* Form */}
-      <form
-        name="myForm"
-        onSubmit={handleSubmit}
-        className="p-4 mb-8 shadow-md rounded-md bg-gray-50"
-      >
+      <form onSubmit={handleSubmit} className="p-4 mb-8 shadow-md rounded-md bg-gray-50">
         {/* Incident Section */}
         <div className="mt-2 mb-4 p-3 shadow-md rounded-md bg-gray-50">
           <p className="text-left font-medium">Incident Information:</p>
@@ -147,9 +153,10 @@ export default function Hero() {
         <div className="text-center mt-8 mb-4">
           <button
             type="submit"
+            disabled={loading}
             className="px-4 py-1 rounded-full shadow-sm border border-black bg-gray-500 text-white hover:bg-gray-700 active:bg-gray-700 hover:border-gray-700 active:border-gray-700 transition hover:scale-110 active:scale-110"
           >
-            <strong>Submit</strong>
+            <strong>{loading ? "Submitting..." : "Submit"}</strong>
           </button>
         </div>
 
