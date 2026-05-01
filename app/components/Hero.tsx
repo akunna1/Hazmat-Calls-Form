@@ -50,16 +50,16 @@ export default function Hero() {
         <div className="mt-2 mb-4 p-3 shadow-md rounded-md bg-gray-50">
           <p className="text-left font-medium">Incident Information:</p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-2">
-                <div className="flex"><input type="date" name="incidentDate" placeholder="Incident Date"required className="border rounded px-3 py-1 w-full" /></div>
-                <div className="flex"><input type="time" name="incidentTime" placeholder="Incident Time" required className="border rounded px-3 py-1 w-full" /></div>
-                <input type="text" name="incidentNumber" placeholder="Incident Number" required className="border rounded px-3 py-1 w-full" />
+                <div className="flex"><input type="date" name="incidentDate" placeholder="Incident Date"required className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" /></div>
+                <div className="flex"><input type="time" name="incidentTime" placeholder="Incident Time" required className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" /></div>
+                <input type="text" name="incidentNumber" placeholder="Incident Number" required className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 mb-2">
-              <input type="text" name="incidentStreet" placeholder="Street Address" required className="border rounded px-3 py-1 w-full" />
-              <input type="text" name="incidentCity" placeholder="City" required className="border rounded px-3 py-1 w-full" />
-              <input type="text" name="incidentState" maxLength={2} placeholder="State" required className="border rounded px-3 py-1 w-full" />
-              <input type="text" name="incidentZip" placeholder="Zip Code" required className="border rounded px-3 py-1 w-full" />            
+              <input type="text" name="incidentStreet" placeholder="Street Address" required className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
+              <input type="text" name="incidentCity" placeholder="City" required className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
+              <input type="text" name="incidentState" maxLength={2} placeholder="State" required className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
+              <input type="text" name="incidentZip" placeholder="Zip Code" required className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />            
             </div>
         </div>
 
@@ -68,16 +68,16 @@ export default function Hero() {
         <div className="mt-6 lg:mt-10 mb-4 p-3 shadow-md rounded-md bg-gray-50">
           <p className="text-left font-medium">Party Information:</p>    
             <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-2">
-              <input type="text" name="name" placeholder="Name" required className="border rounded px-3 py-1 w-full" />
-              <input type="tel" name="phone" placeholder="Phone Number" required className="border rounded px-3 py-1 w-full" />
-              <input type="email" name="email" placeholder="Email Address" required className="border rounded px-3 py-1 w-full" />
+              <input type="text" name="name" placeholder="Name" required className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
+              <input type="tel" name="phone" placeholder="Phone Number" required className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
+              <input type="email" name="email" placeholder="Email Address" required className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 mb-2">
-              <input type="text" name="street" placeholder="Street Address" required className="border rounded px-3 py-1 w-full" />
-              <input type="text" name="city" placeholder="City" required className="border rounded px-3 py-1 w-full" />
-              <input type="text" name="state" maxLength={2} placeholder="State" required className="border rounded px-3 py-1 w-full" />
-              <input type="text" name="zip" placeholder="Zip Code" required className="border rounded px-3 py-1 w-full" />            
+              <input type="text" name="street" placeholder="Street Address" required className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
+              <input type="text" name="city" placeholder="City" required className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
+              <input type="text" name="state" maxLength={2} placeholder="State" required className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
+              <input type="text" name="zip" placeholder="Zip Code" required className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />            
             </div>
         </div>
 
@@ -86,23 +86,23 @@ export default function Hero() {
         <div>
           <p className="text-left font-medium">Company Information:</p>           
             <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-2">
-              <input type="text" name="name2" placeholder="Name" required className="border rounded px-3 py-1 w-full" />
-              <input type="tel" name="phone2" placeholder="Phone Number" required className="border rounded px-3 py-1 w-full" />
-              <input type="email" name="email2" placeholder="Email Address" required className="border rounded px-3 py-1 w-full" />
+              <input type="text" name="name2" placeholder="Name" required className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
+              <input type="tel" name="phone2" placeholder="Phone Number" required className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
+              <input type="email" name="email2" placeholder="Email Address" required className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 mb-2">
-              <input type="text" name="street2" placeholder="Street Address" required className="border rounded px-3 py-1 w-full" />
-              <input type="text" name="city2" placeholder="City" required className="border rounded px-3 py-1 w-full" />
-              <input type="text" name="state2" maxLength={2} placeholder="State" required className="border rounded px-3 py-1 w-full" />
-              <input type="text" name="zip2" placeholder="Zip Code" required className="border rounded px-3 py-1 w-full" />            
+              <input type="text" name="street2" placeholder="Street Address" required className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
+              <input type="text" name="city2" placeholder="City" required className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
+              <input type="text" name="state2" maxLength={2} placeholder="State" required className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
+              <input type="text" name="zip2" placeholder="Zip Code" required className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />            
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 mb-2">
-              <input type="text" name="insuranceName" placeholder="Insurance Name" required className="border rounded px-3 py-1 w-full" />
-              <input type="text" name="insurancePolicyNumber" placeholder="Insurance Policy Number" required className="border rounded px-3 py-1 w-full" />
-              <input type="url" name="website" placeholder="Website" required className="border rounded px-3 py-1 w-full" />
-              <input type="text" name="usdotSafer" placeholder="USDOT/SAFER Number" required className="border rounded px-3 py-1 w-full" />
+              <input type="text" name="insuranceName" placeholder="Insurance Name" required className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
+              <input type="text" name="insurancePolicyNumber" placeholder="Insurance Policy Number" required className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
+              <input type="url" name="website" placeholder="Website" required className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
+              <input type="text" name="usdotSafer" placeholder="USDOT/SAFER Number" required className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
             </div>
         </div>
 
@@ -112,23 +112,23 @@ export default function Hero() {
         <div className="mt-6 lg:mt-10 mb-4 p-3 shadow-md rounded-md bg-gray-50">
           <p className="text-left font-medium">Vehicle Information:</p>      
             <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-2">
-              <input type="text" name="make" placeholder="Make" required className="border rounded px-3 py-1 w-full" />
-              <input type="text" name="model" placeholder="Model" required className="border rounded px-3 py-1 w-full" />
-              <input type="text" name="year" maxLength={4} placeholder="Year" required className="border rounded px-3 py-1 w-full" />
+              <input type="text" name="make" placeholder="Make" required className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
+              <input type="text" name="model" placeholder="Model" required className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
+              <input type="text" name="year" maxLength={4} placeholder="Year" required className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-2">
-              <input type="text" name="vinNumber" placeholder="VIN Number" required className="border rounded px-3 py-1 w-full" />
-              <input type="text" name="usdotNumber" placeholder="USDOT Number" required className="border rounded px-3 py-1 w-full" />
+              <input type="text" name="vinNumber" placeholder="VIN Number" required className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
+              <input type="text" name="usdotNumber" placeholder="USDOT Number" required className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-2">
-              <input type="text" name="vehicleInsuranceCompany" placeholder="Vehicle Insurance Company" required className="border rounded px-3 py-1 w-full" />
-              <input type="text" name="vehicleInsurancePolicyNumber" placeholder="Vehicle Insurance Policy Number" required className="border rounded px-3 py-1 w-full" />
+              <input type="text" name="vehicleInsuranceCompany" placeholder="Vehicle Insurance Company" required className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
+              <input type="text" name="vehicleInsurancePolicyNumber" placeholder="Vehicle Insurance Policy Number" required className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
             </div>
 
             <div className="grid grid-cols-1 mb-2">
-              <textarea name="otherVehicleDetails" placeholder="Other Vehicle Details (If tractor-trailer, include Trailer information here, Tractor info above)" rows={4} className="border rounded px-3 py-1 w-full"/>
+              <textarea name="otherVehicleDetails" placeholder="Other Vehicle Details (If tractor-trailer, include Trailer information here, Tractor info above)" rows={4} className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200"/>
             </div>
         </div>
 
@@ -137,15 +137,15 @@ export default function Hero() {
         <div className="mt-6 lg:mt-10 mb-4 p-3 shadow-md rounded-md bg-gray-50">
             <p className="text-left font-medium">Other Information:</p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-2">
-              <input type="text" name="ncshpNumber" placeholder="NCSHP Report Number" required className="border rounded px-3 py-1 w-full" />
-              <input type="text" name="ncshpName" placeholder="NCSHP Trooper Name" required className="border rounded px-3 py-1 w-full" />
-              <input type="text" name="ncshpUnitNumber" placeholder="NCSHP Unit Number" required className="border rounded px-3 py-1 w-full" />
+              <input type="text" name="ncshpNumber" placeholder="NCSHP Report Number" required className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
+              <input type="text" name="ncshpName" placeholder="NCSHP Trooper Name" required className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
+              <input type="text" name="ncshpUnitNumber" placeholder="NCSHP Unit Number" required className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-2">
-              <input type="text" name="dpdNumber" placeholder="DPD/DSO Report Number" required className="border rounded px-3 py-1 w-full" />
-              <input type="text" name="dpdName" placeholder="DPD/DSO Trooper Name" required className="border rounded px-3 py-1 w-full" />
-              <input type="text" name="dpdUnitNumber" placeholder="DPD/DSO Unit Number" required className="border rounded px-3 py-1 w-full" />
+              <input type="text" name="dpdNumber" placeholder="DPD/DSO Report Number" required className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
+              <input type="text" name="dpdName" placeholder="DPD/DSO Trooper Name" required className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
+              <input type="text" name="dpdUnitNumber" placeholder="DPD/DSO Unit Number" required className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
             </div>
         </div>
 
@@ -154,7 +154,7 @@ export default function Hero() {
           <button
             type="submit"
             disabled={loading}
-            className="px-4 py-1 rounded-full shadow-sm border border-black bg-gray-500 text-white hover:bg-gray-700 active:bg-gray-700 hover:border-gray-700 active:border-gray-700 transition hover:scale-110 active:scale-110"
+            className="px-4 py-1 rounded-full shadow-sm text-white hover:text-gray-300 active:text-gray-300 bg-gray-700 border border-gray-700 transition hover:scale-115 active:scale-115"
           >
             <strong>{loading ? "Submitting..." : "Submit"}</strong>
           </button>
