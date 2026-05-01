@@ -50,8 +50,8 @@ export default function Hero() {
         <div className="mt-2 mb-4 p-3 shadow-md rounded-md bg-gray-50">
           <p className="text-left font-medium">Incident Information:</p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-2">
-                <div className="flex"><input type="date" name="incidentDate" placeholder="Incident Date"required className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" /></div>
-                <div className="flex"><input type="time" name="incidentTime" placeholder="Incident Time" required className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" /></div>
+                <input type="date" name="incidentDate" placeholder="Incident Date"required className="w-full min-w-0 px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
+                <input type="time" name="incidentTime" placeholder="Incident Time" required className="w-full min-w-0 px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
                 <input type="text" name="incidentNumber" placeholder="Incident Number" required className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
             </div>
             
