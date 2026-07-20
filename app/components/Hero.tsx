@@ -68,7 +68,7 @@ export default function Hero() {
         <div className="mt-6 lg:mt-10 mb-4 p-3 shadow-md rounded-md bg-gray-50">
           <p className="text-left font-medium">Party Information:</p>    
             <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-2">
-              <input type="text" name="name" placeholder="Name" className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
+              <input type="text" name="name" placeholder="Name" required className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
               <input type="tel" name="phone" placeholder="Phone Number" className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
               <input type="email" name="email" placeholder="Email Address"className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
             </div>
@@ -81,7 +81,7 @@ export default function Hero() {
             </div>
         </div>
 
-        {/* Contact Infromation Section */}
+        {/* Company Information Section */}
         <div className="mt-6 lg:mt-10 mb-4 p-3 shadow-md rounded-md bg-gray-50">
         <div>
           <p className="text-left font-medium">Company Information:</p>           
