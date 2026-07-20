@@ -153,6 +153,17 @@ export async function POST(req: Request) {
     drawLine('DPD/DSO Trooper Name', data.dpdName)
     drawLine('DPD/DSO Unit Number', data.dpdUnitNumber)
 
+    y -= 20
+
+    // Submitted By
+    drawSubtitle('Form Submitted By')
+    drawLine('Full Name', data.SubmittedByName)
+    drawLine('Phone', data.SubmittedByPhone)
+    drawLine('Email', data.SubmittedByEmail)
+    drawLine('Employee Rank', data.SubmittedByRank)
+    drawLine('Date', data.SubmittedByDate)
+    drawLine('Time', data.SubmittedByTime)
+
     // Converting PDF to bytes
     const pdfBytes = await pdfDoc.save()
     const buffer = Buffer.from(pdfBytes)
@@ -204,8 +215,11 @@ export async function POST(req: Request) {
           subject: "Durham Fire Forms",
           html: `
             <h2>New HazMat Calls and Commercial Trucking Incidents Form Submission</h2>
-            <p><strong>Submitted By:</strong> ${data.name}</p>
-            <p><strong>Incident Number:</strong> ${data.incidentNumber}</p>
+            <p><strong>Submitted By:</strong> ${data.submittedByName}</p>
+            <p><strong>Email:</strong> ${data.submittedByEmail}</p>
+            <p><strong>Employee Rank:</strong> ${data.submittedByRank}</p>
+            <p><strong>Party Name:</strong> ${data.name}</p>
+            <p><strong>Company Name:</strong> ${data.name2}</p>
             <p><strong>Submitted On:</strong> ${submittedOn}</p>
             <p>The full record can be accessed through the link below.</p>
             <p><a href="${publicUrl}">View PDF</a></p>

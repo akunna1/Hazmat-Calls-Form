@@ -86,7 +86,7 @@ export default function Hero() {
         <div>
           <p className="text-left font-medium">Company Information:</p>           
             <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-2">
-              <input type="text" name="name2" placeholder="Name" className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
+              <input type="text" name="name2" placeholder="Name" required className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
               <input type="tel" name="phone2" placeholder="Phone Number" className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
               <input type="email" name="email2" placeholder="Email Address" className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
             </div>
@@ -146,6 +146,19 @@ export default function Hero() {
               <input type="text" name="dpdNumber" placeholder="DPD/DSO Report Number" className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
               <input type="text" name="dpdName" placeholder="DPD/DSO Trooper Name" className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
               <input type="text" name="dpdUnitNumber" placeholder="DPD/DSO Unit Number" className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
+            </div>
+        </div>
+
+        {/* Form Submitted By Section */}
+        <div className="mt-6 lg:mt-10 mb-4 p-3 shadow-md rounded-md bg-gray-50">
+            <p className="text-left font-medium">Form Submitted By:</p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-2">
+              <input type="text" name="submittedByName" placeholder="Full Name" required className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
+              <input type="tel" name="submittedByPhone" placeholder="Phone Number" required className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
+              <input type="email" name="submittedByEmail" placeholder="Email Address" required className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
+              <input type="text" name="submittedByRank" placeholder="Employee Rank" required className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
+              <input type="date" name="submittedByDate" placeholder="Date" required className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
+              <input type="time" name="submittedByTime" placeholder="Time" required className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
             </div>
         </div>
 
