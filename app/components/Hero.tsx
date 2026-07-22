@@ -61,7 +61,7 @@ export default function Hero() {
         </div>
 
         {/* Incident Section */}
-        <div className="mt-6 lg:mt-10 mb-4p-3 shadow-md rounded-md bg-gray-50">
+        <div className="mt-6 lg:mt-10 mb-4 p-3 shadow-md rounded-md bg-gray-50">
           <p className="text-left font-medium">Incident Information:</p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-2">
                 <input type="date" name="incidentDate" placeholder="Incident Date" required className="w-full appearance-none px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-black focus:border-black transition duration-200" />
